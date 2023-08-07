@@ -10,10 +10,6 @@ function App() {
       while(c < input.length){
         var found = false;
 
-        if(input[c] === " "){
-          result += "\n"
-          c++
-        }
         for(let e = 0; e < elements.length; e++){
           var len = elements[e][0].length
           if(input.substring(c, c+len) === elements[e][0].toLowerCase()){
@@ -24,8 +20,23 @@ function App() {
           }
         }
         if(!found){
-          result = "The elements to convert that phrase into don't exist..."
-          break
+          if(input[c] === " "){
+            result += "\n"
+            c++
+          }
+          else{
+            for(let f = 0; f < fakes.length; f++){
+              if(input[c] === fakes[f][0].toLowerCase()){
+                result += fakes[f][1]
+                result += " "
+                c++
+              }
+              else{
+                result = "The elements to convert that phrase into don't exist..."
+                break
+              }
+            }
+          }
         }
       }
     }
@@ -76,5 +87,8 @@ const elements = [['Uut', 'Ununtrium'], ['Uup', 'Ununpentium'], ['Uus', 'Ununsep
 ['Mt', 'Meitnerium'], ['Ds', 'Darmstadtium'], ['Rg', 'Roentgenium'], ['Cn', 'Copernicium'], ['Fl', 'Flerovium'], ['Lv', 'Livermorium'], ['H', 'Hydrogen'], 
 ['B', 'Boron'], ['C', 'Carbon'], ['N', 'Nitrogen'], ['O', 'Oxygen'], ['F', 'Fluorine'], ['P', 'Phosphorus'], ['S', 'Sulfur'], ['K', 'Potassium'], 
 ['V', 'Vanadium'], ['Y', 'Yttrium'], ['I', 'Iodine'], ['W', 'Tungsten'], ['U', 'Uranium']]
+
+const fakes = [['A', 'Allfathers'], ['D', 'Dirt'], ['E', 'Earth'], ['G', 'Gyryk'], ['J', 'Joker'], ['L', 'Takethe'], ['M', 'Mars'], ['Q', 'Quest'], 
+['R', 'Random'], ['T', 'Tank'], ['X', 'Nope'], ['Z', 'Zamn']]
 
 export default App;
