@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/periodicify/static/css/main.72ce531a.css",
-    "main.js": "/periodicify/static/js/main.623f65af.js",
+    "main.js": "/periodicify/static/js/main.c4a9ea6d.js",
     "static/js/787.26b89d25.chunk.js": "/periodicify/static/js/787.26b89d25.chunk.js",
     "static/media/Title.png": "/periodicify/static/media/Title.cae441132df9b054f0b5.png",
     "index.html": "/periodicify/index.html",
     "main.72ce531a.css.map": "/periodicify/static/css/main.72ce531a.css.map",
-    "main.623f65af.js.map": "/periodicify/static/js/main.623f65af.js.map",
+    "main.c4a9ea6d.js.map": "/periodicify/static/js/main.c4a9ea6d.js.map",
     "787.26b89d25.chunk.js.map": "/periodicify/static/js/787.26b89d25.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.72ce531a.css",
-    "static/js/main.623f65af.js"
+    "static/js/main.c4a9ea6d.js"
   ]
 }
