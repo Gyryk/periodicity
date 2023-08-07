@@ -29,12 +29,14 @@ function App() {
               if(input[c] === fakes[f][0].toLowerCase()){
                 result += fakes[f][1]
                 result += " "
+                found  = true
                 c++
               }
-              else{
-                result = "The elements to convert that phrase into don't exist..."
-                break
-              }
+            }
+
+            if(!found){
+              result = "The elements to convert that phrase into don't exist..."
+              break
             }
           }
         }
