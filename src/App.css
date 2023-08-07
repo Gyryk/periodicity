@@ -322,3 +322,19 @@ h1:hover {
 .textInputWrapper:focus-within .textInput::placeholder {
   opacity: 0;
 }
+
+@media (any-pointer: coarse) {
+  h1 {
+    font-size: 1.5rem;
+    letter-spacing: 0.15rem;
+    word-spacing: 0.3rem;
+  }
+}
+
+@media (any-pointer: fine) {
+  h1 {
+    font-size: 2.5rem;
+    letter-spacing: 0.25rem;
+    word-spacing: 0.5rem;
+  }
+}
