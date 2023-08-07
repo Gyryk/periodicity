@@ -328,6 +328,7 @@ h1:hover {
     font-size: 1.5rem;
     letter-spacing: 0.15rem;
     word-spacing: 0.3rem;
+    margin: 2rem;
   }
 }
 
@@ -336,5 +337,6 @@ h1:hover {
     font-size: 2.5rem;
     letter-spacing: 0.25rem;
     word-spacing: 0.5rem;
+    margin: 4rem;
   }
 }
